@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
+
+
+a {
+    text-decoration: none;
+}
+body {
+	margin: 0;
+}
+.main-wrapper {
+    margin:0px auto ;
+    width:1000px;
+}
+header {
+	background-color: black;
+    padding: 8px,0px,6px,10px;
+    margin-bottom: 0px;
+}
+header nav {
+    width: 100%;
+    height:60px;
+    background-color: black;
+}
+header h1 {
+	display: inline;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 12px;
+	padding-left: 10px;
+	color: red;
+	text-shadow: 2px 2px 4px #ccc;
+}
+
+header nav ul {
+	display: inline;
+	padding-left: 15px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    float: left;
+} 
+header nav ul li {
+	display: inline-block;
+    float: left;
+    list-style: none;
+    padding-right: 8px;
+
+}
+header nav ul li a {
+	font-size: 22px;
+    float: left;
+    list-style: none;
+    padding-right: 10px;
+	font-family: 'Montserrat', sans-serif;
+	color: #ccc;
+	font-weight: 500;
+
+}  
+
+header .nav-login {
+    float: right;
+}
+header .nav-login  form {
+    float: left;
+    padding-top: 15px;
+}
+header .nav-login  form input {
+    float: left;
+    width: 140px;
+    height: 30px;
+    padding: 0px 10px;
+    margin-right: 5px;
+    border: none;
+    background-color: #ccc;
+
+}
+header .nav-login  form  button {
+    float: left;
+    width: 60px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 2px;
+    padding-top: 2px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+
+}
+header .nav-login a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    color: #111;
+    padding-top: 3px;
+    line-height: 50px;
+    font-size: 16px;
+    color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.product{
+        margin-left: 30px;
+        margin-bottom: 30px;
+}
+
+
+
+/*****INDEX****/
+.banner {
+    background-image: url(images/banner.jpg);
+    height: 500px;
+    width:100%;
+    margin-top: 0px;
+    border-top: 2px solid white;
+}
+
+
+/***blog**/
+
+
+.posting form {
+    width: 70%;
+    float: center;
+    margin: 0px auto;
+
+} 
+.posting form ul {
+    list-style: none;
+    margin: 5px 5px 5px 5px;
+    
+}
+.posting form ul li{
+    margin: 5px 5px 5px 5px;
+    
+}
+.singlepost { 
+    float: center;
+    text-align: left;
+    background-color: #D1C5C3;
+    border: 2px solid black;
+    margin-bottom: 5px;
+} 
+.showposts { 
+    height: auto;
+    width: 70%;
+    float: center;
+    margin: 0px auto;
+} 
+.posttitle { 
+    color: #0E799B;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-left: 10px;
+} 
+.postusername{ 
+    color: #4D0808;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+} 
+.singlepost p { 
+    text-align: left;
+    padding-left: 15px;
+    font-size: 18px;
+
+    font-family:  sans-serif;
+} 
+ 
+ 
+
+/*****signup.php***/
+.main-container {
+    text-align: center;
+    padding-top: 20px;
+}
+.main-container h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+}
+.signup-form {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border: 2px solid black;
+    background-color: #0C536A;
+
+}
+.profession {
+	padding-top: 5px;
+	padding-left: 5%;
+	float: left;
+	text-align: left;
+	font-size: 20px;
+
+}
+
+ 
+.signup-form button {
+    display: block;
+    margin: 0 auto;
+    float: center;
+    width: 30%;
+    height: 40px;
+    border: none;
+    background-color: #222;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.footer {
+  position: relative;
+  margin-top: -100px;
+  height: 200px;
+  clear: both;
+  padding-top: 10px;
+  color: white;
+  background-color: #383535;
+  text-align: center;
+}
+.footer ul li{
+  width: 33%;
+  list-style: none;
+  float: left;
+  
+}
+.footlogo {
+    width: 200px;
+    height: 150px;
+    background-image: url(images/logo.jpg); 
+    
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+}
+
+.footdiv {
+    padding-top: 5px;
+}

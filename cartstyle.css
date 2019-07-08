@@ -1,0 +1,360 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+* {
+  box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.main-wrapper {
+    margin:0px auto ;
+    width:1000px;
+}
+header {
+  background-color: black;
+    padding: 8px,0px,6px,10px;
+    margin-bottom: 0px;
+}
+header nav {
+    width: 100%;
+    height:60px;
+    background-color: black;
+}
+header h1 {
+  display: inline;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 12px;
+  padding-left: 10px;
+  color: red;
+  text-shadow: 2px 2px 4px #ccc;
+}
+
+header nav ul {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+    float: left;
+} 
+header nav ul li {
+  display: inline-block;
+    float: left;
+    list-style: none;
+    padding-right: 8px;
+
+}
+header nav ul li a {
+  font-size: 22px;
+    float: left;
+    list-style: none;
+    padding-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ccc;
+  font-weight: 500;
+
+}  
+
+header .nav-login {
+    float: right;
+}
+header .nav-login  form {
+    float: left;
+    padding-top: 15px;
+}
+header .nav-login  form input {
+    float: left;
+    width: 140px;
+    height: 30px;
+    padding: 0px 10px;
+    margin-right: 5px;
+    border: none;
+    background-color: #ccc;
+
+}
+header .nav-login  form  button {
+    float: left;
+    width: 60px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 2px;
+    padding-top: 2px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+
+}
+header .nav-login a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    color: #111;
+    padding-top: 3px;
+    line-height: 50px;
+    font-size: 16px;
+    color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.product{
+        margin-left: 30px;
+        margin-bottom: 30px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #7EC855;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.footer {
+  position: relative;
+  margin-top: -100px;
+  height: 200px;
+  clear: both;
+  padding-top: 10px;
+  color: white;
+  background-color: #383535;
+  text-align: center;
+}
+.footer ul li{
+  width: 33%;
+  list-style: none;
+  float: left;
+  
+}
+.footlogo {
+    width: 200px;
+    height: 150px;
+    background-image: url(images/logo.jpg); 
+    
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+}
+
+.footdiv {
+    padding-top: 5px;
+}
+
+
+
+
+.shopping-cart {
+  width: 750px;
+  height: 700px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding: 20px 30px;
+  border-bottom: 1px solid #E1E8EE;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+/* Buttons -  Delete and Like */
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+.delete-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  background: url("delete-icn.svg") no-repeat center;
+  margin-right: 20px;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  display: inline-block;
+  background: url('images/twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.is-active {
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0%   { background-position: left;  }
+  50%  { background-position: right; }
+  100% { background-position: right; }
+}
+
+/* Product Image */
+.image {
+  margin-right: 50px;
+}
+
+/* Product Description */
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+/* Product Quantity */
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+
+/* Total Price */
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+}
+
+.checkout-btn:before {
+  margin-right: .5em;
+}
+._btn.checkout-btn:hover {
+  background-color: #2980b9;
+}
